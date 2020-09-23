@@ -4,14 +4,14 @@ sudo apt autoremove -y && sudo apt autoclean -y
 cd ~/Downloads
 git clone https://github.com/coolsnowwolf/lede
 cd lede
-echo "src-git packages https://github.com/coolsnowwolf/packages
+echo 'src-git packages https://github.com/coolsnowwolf/packages
 src-git luci https://github.com/coolsnowwolf/luci
 src-git routing https://git.openwrt.org/feed/routing.git
 src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git freifunk https://github.com/freifunk/openwrt-packages.git
 src-git helloworld https://github.com/fw876/helloworld
 src-git kenzo https://github.com/V2RaySSR/openwrt-packages
-src-git small https://github.com/V2RaySSR/small" > feeds.conf.default
+src-git small https://github.com/V2RaySSR/small' > feeds.conf.default
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make menuconfig
