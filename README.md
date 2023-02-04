@@ -1,2 +1,2 @@
 # Compile-openwrt
-git clone "https://github.com/ztfot/compile-openwrt.git"
+git clone "https://github.com/kivvi3412/compile-openwrt.git"
